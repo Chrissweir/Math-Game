@@ -69,9 +69,42 @@ namespace Math_Game
             {
                 if (rootFrame.Content == null)
                 {
-                    // When the navigation stack isn't restored navigate to the first page,
-                    // configuring the new page by passing required information as a navigation
-                    // parameter
+                    //Check here
+                    //Load Default settings
+                    string HighScore = Common.Common.LoadSettings("HighScore");
+                    string GameMode = Common.Common.LoadSettings("GameMode");
+                    string SpeedValue = Common.Common.LoadSettings("Speed");
+
+                    if(String.IsNullOrEmpty(SpeedValue))
+                    {
+                        Common.Common.SaveSettings("Speed", "50");
+                        Common.Common.Speed = 50;
+                    }
+                    else
+                    {
+                        Common.Common.Speed = int.Parse(Common.Common.LoadSettings("Speed"));
+                    }
+
+                    if (String.IsNullOrEmpty(GameMode))
+                    {
+                        Common.Common.SaveSettings("GameMode", "0");
+                        Common.Common.GameMode = 0;
+                    }
+                    else
+                    {
+                        Common.Common.GameMode = int.Parse(Common.Common.LoadSettings("GameMode"));
+                    }
+
+                    if (String.IsNullOrEmpty(HighScore))
+                    {
+                        Common.Common.SaveSettings("HighScore", "0");
+                        Common.Common.HighScore = 0;
+                    }
+                    else
+                    {
+                        Common.Common.HighScore = int.Parse(Common.Common.LoadSettings("HighScore"));
+                    }
+
                     rootFrame.Navigate(typeof(MainPage), e.Arguments);
                 }
                 // Ensure the current window is active
