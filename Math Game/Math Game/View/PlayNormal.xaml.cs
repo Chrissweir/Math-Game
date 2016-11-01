@@ -22,9 +22,17 @@ namespace Math_Game.View
     /// </summary>
     public sealed partial class PlayNormal : Page
     {
+        private int staticNumA, staticNumB, staticResult, staticRandomResult;
+        private DispatcherTimer dispatcherTimer;
+
         public PlayNormal()
         {
             this.InitializeComponent();
+        }
+
+        private void btnTrue_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
