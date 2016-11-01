@@ -1,1 +1,0 @@
-H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\Math Game.csproj;x86
