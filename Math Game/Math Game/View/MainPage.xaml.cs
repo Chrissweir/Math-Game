@@ -61,7 +61,11 @@ namespace Math_Game
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
+            if (Common.Common.GameMode == 0) //Normal
+                Frame.Navigate(typeof(View.PlayNormal));
 
+            else //Advanced
+                Frame.Navigate(typeof(View.PlayAdvanced));
         }
 
         private void btnOption_Click(object sender, RoutedEventArgs e)
