@@ -25,7 +25,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <TextBlock x:Name="txtState" Text="1" FontSize="40" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <ProgressBar x:Name="progressBar" IsIndeterminate="False" Maximum="9999" Minimum="0" Height="10" Margin="8 0 8 0" Value="9999" SmallChange="1"/>
+                <ProgressBar Grid.Row="1" x:Name="progressBar" IsIndeterminate="False" Maximum="9999" Minimum="0" Height="10" Margin="8 0 8 0" Value="9999" SmallChange="1"/>
             </Grid>
             <Grid Grid.Row="2">
                 <TextBlock x:Name="txtMath" Text="3 + 5 = 8" FontSize="40" Foreground="White" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -34,7 +34,7 @@
                 <Button x:Name="btnTrue" BorderBrush="#a4404e" BorderThickness="4" Margin="5" Background="#9fc33e" Content="True" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="20 5 20 5" 
                         Foreground="White" FontWeight="ExtraBold" FontSize="30" Click="btnTrue_Click"/>
                 <Button x:Name="btnFalse" BorderBrush="#a4404e" BorderThickness="4" Margin="25 5 25 5" Background="#ee474f" Content="False" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="20 5 20 5" 
-                        Foreground="White" FontWeight="ExtraBold" FontSize="30" Click="btnTrue_Click"/>
+                        Foreground="White" FontWeight="ExtraBold" FontSize="30" Click="btnFalse_Click"/>
             </Grid>
         </Grid>
     </Grid>

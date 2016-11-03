@@ -37,6 +37,25 @@ namespace Math_Game.View
             progressBar.Value = 9999;
         }
 
+        private void btnFalse_Click(object sender, RoutedEventArgs e)
+        {
+            if (mode == 0) // mode = 1 so correct answer is true
+            {
+                txtScore.Text = String.Format("Score:{0}".ToUpper(), ++Score);
+                txtState.Text = String.Format("{0}", ++State);
+                dispatcherTimer.Stop();
+                dispatcherTimer = null;
+                Playing();
+            }
+            else
+            {
+                dispatcherTimer.Stop();
+                dispatcherTimer = null;
+
+                Frame.Navigate(typeof(GameOver), Score.ToString());
+            }
+        }
+
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested -= PlayNormal_BackRequested;
@@ -46,6 +65,8 @@ namespace Math_Game.View
         {
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += PlayNormal_BackRequested;
             dispatcherTimer = null;
+
+            Playing();
         }
 
         private async void PlayNormal_BackRequested(object sender, BackRequestedEventArgs e)

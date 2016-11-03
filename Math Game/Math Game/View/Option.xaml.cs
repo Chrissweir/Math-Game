@@ -39,6 +39,11 @@ namespace Math_Game.View
             Common.Common.SaveSettings("GameMode", "1");
         }
 
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested -= Option_BackRequested;
+        }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += Option_BackRequested;
