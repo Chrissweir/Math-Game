@@ -18,8 +18,22 @@
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
                     <TextBlock x:Name="txtTitle" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Game Over!" Foreground="#f0474f" FontWeight="ExtraBold"
                                TextWrapping="Wrap" FontSize="40" TextAlignment="Center"/>
-                    <TextBlock x:Name="YourScore" VerticalAlignment="Center" HorizontalAlignment="Center" Text="10" Margin="0 20 0 0" Foreground="White" FontWeight="ExtraBold"
+                    <TextBlock x:Name="YourScore" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Your Score" Margin="0 20 0 0" Foreground="White" FontWeight="ExtraBold"
                                TextWrapping="Wrap" FontSize="25" TextAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBlock x:Name="Score" VerticalAlignment="Center" HorizontalAlignment="Center" Text="10" Margin="0 20 0 0" Foreground="White" FontWeight="ExtraBold"
+                               TextWrapping="Wrap" FontSize="80" TextAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <Button x:Name="btnTryAgain" BorderBrush="#ee474f" BorderThickness="4" Margin="0 20 0 0" Background="#9fcc3e" Content="TRY AGAIN?"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="5 10" Foreground="White" FontWeight="ExtraBold" FontSize="30"
+                            Click="btnTryAgain_Click"/>
+                    <Button x:Name="btnHome" BorderBrush="#ee474f" BorderThickness="4" Margin="0 20 0 0" Background="#9fcc3e" Content="HOME"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="50 10" Foreground="White" FontWeight="ExtraBold" FontSize="30"
+                            Click="btnHome_Click"/>
                 </StackPanel>
             </Grid>
         </Grid>
