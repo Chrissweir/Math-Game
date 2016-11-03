@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Math_Game.View;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -70,7 +71,7 @@ namespace Math_Game
 
         private void btnOption_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(Option));
         }
     }
 }
