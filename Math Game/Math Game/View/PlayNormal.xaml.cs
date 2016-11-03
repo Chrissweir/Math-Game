@@ -24,7 +24,7 @@ namespace Math_Game.View
     /// </summary>
     public sealed partial class PlayNormal : Page
     {
-        private int staticNumA, staticNumB, staticResult, staticRandomResult,Score=0,State=1,BestScore=0,mode;
+        private int staticNumA, staticNumB, staticResult, staticRandomResult,Score=0,State=1,highScore=0,mode;
         private DispatcherTimer dispatcherTimer;
 
         private void setupProgressBar()
@@ -64,6 +64,8 @@ namespace Math_Game.View
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += PlayNormal_BackRequested;
+            highScore = int.Parse(Common.Common.LoadSettings("HighScore"));
+            txtHighScore.Text = String.Format("HIGH:{0}", highScore);
             dispatcherTimer = null;
 
             Playing();
