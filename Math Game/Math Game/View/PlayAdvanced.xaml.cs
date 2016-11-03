@@ -26,5 +26,25 @@ namespace Math_Game.View
         {
             this.InitializeComponent();
         }
+
+        private void btnPlus_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSub_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMulti_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDiv_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
