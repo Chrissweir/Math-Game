@@ -86,7 +86,7 @@ namespace Math_Game.View
 
         private void btnTrue_Click(object sender, RoutedEventArgs e)
         {
-            if(mode == 1) // mode - 1 so correct answer is true
+            if(mode == 1) // mode = 1 so correct answer is true
             {
                 txtScore.Text = String.Format("Score:{0}".ToUpper(), ++Score);
                 txtState.Text = String.Format("{0}", ++State);
@@ -101,6 +101,65 @@ namespace Math_Game.View
 
                 Frame.Navigate(typeof(GameOver), Score.ToString());
             }
+        }
+
+        private void Playing()
+        {
+            Random rd = new Random();
+            int value = rd.Next(1, 4);
+            if(value == 1)// +
+            {
+                staticNumA = rd.Next(1, 9);
+                staticNumB = rd.Next(0, staticNumA - 1);
+                staticResult = staticNumA + staticNumB;
+                staticRandomResult = rd.Next(1, 99);
+
+                mode = rd.Next(0, 1); //Random mode show answer. if mode = 0 show incorrect result
+                if (mode == 0)
+                    txtMath.Text = String.Format("{0} + {1} = {2}", staticNumA, staticNumB, staticRandomResult);
+                else
+                    txtMath.Text = String.Format("{0} + {1} = {2}", staticNumA, staticNumB, staticResult);
+            }
+            if (value == 2)// -
+            {
+                staticNumA = rd.Next(1, 9);
+                staticNumB = rd.Next(0, staticNumA - 1);
+                staticResult = staticNumA - staticNumB;
+                staticRandomResult = rd.Next(1, 99);
+
+                mode = rd.Next(0, 1); //Random mode show answer. if mode = 0 show incorrect result
+                if (mode == 0)
+                    txtMath.Text = String.Format("{0} - {1} = {2}", staticNumA, staticNumB, staticRandomResult);
+                else
+                    txtMath.Text = String.Format("{0} - {1} = {2}", staticNumA, staticNumB, staticResult);
+            }
+            if (value == 3)// *
+            {
+                staticNumA = rd.Next(1, 9);
+                staticNumB = rd.Next(0, staticNumA - 1);
+                staticResult = staticNumA * staticNumB;
+                staticRandomResult = rd.Next(1, 99);
+
+                mode = rd.Next(0, 1); //Random mode show answer. if mode = 0 show incorrect result
+                if (mode == 0)
+                    txtMath.Text = String.Format("{0} * {1} = {2}", staticNumA, staticNumB, staticRandomResult);
+                else
+                    txtMath.Text = String.Format("{0} * {1} = {2}", staticNumA, staticNumB, staticResult);
+            }
+            if (value == 4)// /
+            {
+                staticNumA = rd.Next(1, 9);
+                staticNumB = rd.Next(1, staticNumA);
+                staticResult = staticNumA / staticNumB;
+                staticRandomResult = rd.Next(1, 99);
+
+                mode = rd.Next(0, 1); //Random mode show answer. if mode = 0 show incorrect result
+                if (mode == 0)
+                    txtMath.Text = String.Format("{0} / {1} = {2}", staticNumA, staticNumB, staticRandomResult);
+                else
+                    txtMath.Text = String.Format("{0} / {1} = {2}", staticNumA, staticNumB, staticResult);
+            }
+            setupProgressBar();
         }
     }
 }
