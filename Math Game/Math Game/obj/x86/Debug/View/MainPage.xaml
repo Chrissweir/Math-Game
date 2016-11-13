@@ -15,19 +15,22 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Margin="0 20 0 0">
-            <TextBlock x:ConnectionId='4' x:Name="Title" Text="MATH GAME" Foreground="White" FontWeight="ExtraBold"
+            <TextBlock x:ConnectionId='5' x:Name="Title" Text="MATH GAME" Foreground="White" FontWeight="ExtraBold"
                    TextWrapping="Wrap" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center"
                    TextAlignment="Center" />
         </Grid>
             <Grid Grid.Row="1">
-                <TextBlock x:ConnectionId='3' x:Name="txtHighScore" Text="HIGH SCORE = 0" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap"
+                <TextBlock x:ConnectionId='4' x:Name="txtHighScore" Text="HIGH SCORE = 0" Foreground="White" FontWeight="ExtraBold" TextWrapping="Wrap"
                            FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"/>
             </Grid>
             <Grid Grid.Row="2">
                 <StackPanel Orientation="Vertical">
-                    <Button x:ConnectionId='1' x:Name="btnStart" BorderBrush="#a4404e" BorderThickness="4" Background="#ee474f" Content="PLAY"
+                    <Button x:ConnectionId='1' x:Name="btnStart" BorderBrush="#a4404e" Visibility="Collapsed" BorderThickness="4" Background="#ee474f" Content="PLAY"
                             HorizontalAlignment="Center" VerticalAlignment="Center" Padding="40 10 40 10" Foreground="White" FontWeight="ExtraBold" FontSize="30"                       />
-                    <Button x:ConnectionId='2' x:Name="btnOption" BorderBrush="#a4404e" BorderThickness="4" Margin="0 20 0 0" Background="#9fcc3e" Content="OPTIONS"
+                    <Button x:ConnectionId='2' x:Name="ButtonLogin" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20 10 20 10" 
+                            Foreground="White" FontWeight="ExtraBold" FontSize="30" BorderBrush="#a4404e" BorderThickness="4"
+                            Background="#ee474f" Content="Sign In" Visibility="Visible" Margin="0,8,8,0"                          />
+                    <Button x:ConnectionId='3' x:Name="btnOption" BorderBrush="#a4404e" BorderThickness="4" Margin="0 20 0 0" Background="#9fcc3e" Content="OPTIONS"
                             HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20 10 20 10" Foreground="White" FontWeight="ExtraBold" FontSize="30"                        />
                 </StackPanel>
             </Grid>

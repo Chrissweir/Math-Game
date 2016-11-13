@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace Math_Game
 {
@@ -135,5 +136,7 @@ namespace Math_Game
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://madmath.azurewebsites.net");
     }
 }

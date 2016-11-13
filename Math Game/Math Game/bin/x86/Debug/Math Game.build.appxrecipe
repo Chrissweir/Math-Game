@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-HPGSBAB</Machine>
+    <Machine>DESKTOP-5KEI95M</Machine>
     <WindowsUser>chris</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,23 +10,35 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>1cdba27d-a1d8-4f9d-a1a0-197dbc5c9002</PackageIdentityName>
     <PackageIdentityPublisher>CN=chris</PackageIdentityPublisher>
-    <IntermediateOutputPath>H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\bin\x86\Debug\Math Game.exe">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\bin\x86\Debug\Math Game.exe">
       <PackagePath>entrypoint\Math Game.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\Microsoft.Azure.Mobile.Client\3.0.3\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\Microsoft.Azure.Mobile.Client\3.0.3\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\Microsoft.Net.Http\2.2.29\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\Microsoft.Net.Http\2.2.29\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
@@ -69,6 +81,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\Newtonsoft.Json\6.0.4\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\runtime.any.System.Private.DataContractSerialization\4.1.0\lib\netcore50\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
@@ -334,47 +349,46 @@
     <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\bin\x86\Debug\Math Game.xr.xml">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\bin\x86\Debug\Math Game.xr.xml">
       <PackagePath>Math Game.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="H:\College\Mobile Applications Development 3\Project\Math-Game\Math Game\Math Game\bin\x86\Debug\Core\Math Game.exe">
+    <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\Math Game\bin\x86\Debug\Core\Math Game.exe">
       <PackagePath>Math Game.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
