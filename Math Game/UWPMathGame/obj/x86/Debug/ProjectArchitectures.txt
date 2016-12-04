@@ -1,0 +1,1 @@
+C:\Users\chris\documents\visual studio 2015\Projects\UWPMathGame\UWPMathGame\UWPMathGame.csproj;x86
