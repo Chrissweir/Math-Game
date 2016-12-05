@@ -5,6 +5,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 using UWPMathGame.ViewModels;
+using UWPMathGame.Models;
 
 namespace UWPMathGame.Views
 {

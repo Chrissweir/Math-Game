@@ -138,7 +138,7 @@ namespace UWPMathGame.UWPMathGame_XamlTypeInfo
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "UWPMathGame.Views.GameOver";
             _typeNameTable[4] = "UWPMathGame.Views.MainPage";
-            _typeNameTable[5] = "UWPMathGame.Views.Option";
+            _typeNameTable[5] = "UWPMathGame.Views.Settings";
             _typeNameTable[6] = "UWPMathGame.Views.PlayAdvanced";
             _typeNameTable[7] = "UWPMathGame.Views.PlayNormal";
 
@@ -148,7 +148,7 @@ namespace UWPMathGame.UWPMathGame_XamlTypeInfo
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::UWPMathGame.Views.GameOver);
             _typeTable[4] = typeof(global::UWPMathGame.Views.MainPage);
-            _typeTable[5] = typeof(global::UWPMathGame.Views.Option);
+            _typeTable[5] = typeof(global::UWPMathGame.Views.Settings);
             _typeTable[6] = typeof(global::UWPMathGame.Views.PlayAdvanced);
             _typeTable[7] = typeof(global::UWPMathGame.Views.PlayNormal);
         }
@@ -188,7 +188,7 @@ namespace UWPMathGame.UWPMathGame_XamlTypeInfo
         private object Activate_0_GameModeMenu() { return new global::UWPMathGame.Views.GameModeMenu(); }
         private object Activate_3_GameOver() { return new global::UWPMathGame.Views.GameOver(); }
         private object Activate_4_MainPage() { return new global::UWPMathGame.Views.MainPage(); }
-        private object Activate_5_Option() { return new global::UWPMathGame.Views.Option(); }
+        private object Activate_5_Settings() { return new global::UWPMathGame.Views.Settings(); }
         private object Activate_6_PlayAdvanced() { return new global::UWPMathGame.Views.PlayAdvanced(); }
         private object Activate_7_PlayNormal() { return new global::UWPMathGame.Views.PlayNormal(); }
 
@@ -231,9 +231,9 @@ namespace UWPMathGame.UWPMathGame_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  UWPMathGame.Views.Option
+            case 5:   //  UWPMathGame.Views.Settings
                 userType = new global::UWPMathGame.UWPMathGame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_Option;
+                userType.Activator = Activate_5_Settings;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

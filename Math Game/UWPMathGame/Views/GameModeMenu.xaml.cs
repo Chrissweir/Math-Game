@@ -38,9 +38,9 @@ namespace UWPMathGame.Views
             Frame.Navigate(typeof(PlayAdvanced));
         }
 
-        private void btnOption_Click(object sender, RoutedEventArgs e)
+        private void btnSettings_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Option));
+            Frame.Navigate(typeof(Settings));
         }
     }
 }

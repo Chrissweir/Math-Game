@@ -1,5 +1,6 @@
 ﻿using System;
 using UWPMathGame.Data;
+using UWPMathGame.Views;
 using UWPMathGame.Models;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

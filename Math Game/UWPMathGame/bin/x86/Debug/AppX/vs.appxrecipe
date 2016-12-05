@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\chris\documents\visual studio 2015\Projects\UWPMathGame\UWPMathGame\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-04T20:51:51.248</Modified>
+      <Modified>2016-12-05T16:00:58.955</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\chris\documents\visual studio 2015\Projects\UWPMathGame\UWPMathGame\bin\x86\Debug\UWPMathGame.exe">
       <PackagePath>entrypoint\UWPMathGame.exe</PackagePath>
-      <Modified>2016-12-04T20:51:49.870</Modified>
+      <Modified>2016-12-05T16:00:57.362</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -504,7 +504,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\documents\visual studio 2015\Projects\UWPMathGame\UWPMathGame\bin\x86\Debug\UWPMathGame.xr.xml">
       <PackagePath>UWPMathGame.xr.xml</PackagePath>
-      <Modified>2016-12-04T20:51:49.477</Modified>
+      <Modified>2016-12-05T15:57:22.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -512,11 +512,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\documents\visual studio 2015\Projects\UWPMathGame\UWPMathGame\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-12-04T20:51:50.746</Modified>
+      <Modified>2016-12-05T16:00:58.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\documents\visual studio 2015\Projects\UWPMathGame\UWPMathGame\bin\x86\Debug\Core\UWPMathGame.exe">
       <PackagePath>UWPMathGame.exe</PackagePath>
-      <Modified>2016-12-04T20:51:51.241</Modified>
+      <Modified>2016-12-05T16:00:58.949</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

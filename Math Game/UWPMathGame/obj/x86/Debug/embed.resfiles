@@ -2,6 +2,6 @@ App.xbf
 Views\GameModeMenu.xbf
 Views\GameOver.xbf
 Views\MainPage.xbf
-Views\Option.xbf
 Views\PlayAdvanced.xbf
 Views\PlayNormal.xbf
+Views\Settings.xbf

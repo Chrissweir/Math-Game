@@ -22,6 +22,8 @@
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
@@ -154,7 +156,7 @@
       <RootProperty Name="Margin" />
       <RootEvent Name="ValueChanged" />
     </RootType>
-    <RootType FullName="UWPMathGame.Views.Option" />
+    <RootType FullName="UWPMathGame.Views.Settings" />
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
       <RootProperty Name="IsIndeterminate" />
       <RootProperty Name="Maximum" />

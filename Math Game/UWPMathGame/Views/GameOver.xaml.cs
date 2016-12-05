@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using UWPMathGame.ViewModels;
+using UWPMathGame.Models;
 
 
 namespace UWPMathGame.Views
@@ -78,7 +79,7 @@ namespace UWPMathGame.Views
 
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MainPage));
+            Frame.Navigate(typeof(GameModeMenu));
         }
     }
 }
