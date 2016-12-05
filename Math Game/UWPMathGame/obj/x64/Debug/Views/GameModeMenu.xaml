@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="UWPMathGame.Views.GameModeMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Background="#37384d">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="0 20 0 0">
+                <TextBlock x:ConnectionId='4' x:Name="Title" Text="MAD MATH" Foreground="White" FontWeight="ExtraBold"
+                   TextWrapping="Wrap" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   TextAlignment="Center" />
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackPanel Orientation="Vertical">
+                    <Button x:ConnectionId='1' x:Name="btnNormal" BorderBrush="AliceBlue"  Background="#9fcc3e" BorderThickness="4" Content="NORMAL"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="40 10 40 10" Foreground="White" FontWeight="ExtraBold" FontSize="30"                        />
+                    <Button x:ConnectionId='2' x:Name="btnAdvanced" BorderBrush="AliceBlue" BorderThickness="4" Background="#ee474f" Margin="0 20 0 0" Content="ADVANCED"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20 10 20 10" Foreground="White" FontWeight="ExtraBold" FontSize="30"                          />
+                    <Button x:ConnectionId='3' x:Name="btnSettings" BorderBrush="AliceBlue" BorderThickness="4" Margin="0 20 0 0" Background="Gray" Content="SETTINGS"
+                            HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20 10 20 10" Foreground="White" FontWeight="ExtraBold" FontSize="30"                          />
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>
+
