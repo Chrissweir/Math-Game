@@ -1,43 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-using UWPMathGame.Views;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace UWPMathGame.Views
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+    //This class is a simple class, it holds click events for the menu buttons Noraml, Advanced, and Settings.
     public sealed partial class GameModeMenu : Page
     {
+        //Constructor
         public GameModeMenu()
         {
             this.InitializeComponent();
         }
+        //End Constructor
 
+        //Click event handler to the normal difficulty button
         private void btnNormal_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(PlayNormal));
         }
 
+        //Click event handler to the advanced difficulty button
         private void btnAdvanced_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(PlayAdvanced));
         }
 
+        //Click event handler to the settings difficulty button
         private void btnSettings_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Settings));

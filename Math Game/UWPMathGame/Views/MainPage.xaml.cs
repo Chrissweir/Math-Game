@@ -4,16 +4,19 @@ using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-using UWPMathGame.Views;
 
 namespace UWPMathGame.Views
 {
+    //This class is simple enough it is the logic for the Main(Home) page of the application.
+    //It contains a click events to handle the play button which will bring the user onto the GameModeMenu page.
     public sealed partial class MainPage : Page
     {
+        //Constructor
         public MainPage()
         {
             this.InitializeComponent();
         }
+        //End Constructor
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
@@ -27,6 +30,7 @@ namespace UWPMathGame.Views
 
         private async void MainPage_BackRequested(object sender, BackRequestedEventArgs e)
         {
+            //If the user tries to exit the application asks are they sure
             e.Handled = true;
             var msg = new MessageDialog("Do you want to exit?");
             var okBtn = new UICommand("Yes");
