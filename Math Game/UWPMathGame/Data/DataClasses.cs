@@ -1,19 +1,16 @@
-﻿using SQLite.Net.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SQLite.Net.Attributes
 
 namespace UWPMathGame.Data
 {
+    //This class contains all the class that are used to interact with the database.
+    //There are three classes, NormalScore, AdvancedScore, and GameSpeed. 
+    //These classes are used to create the database tables hence giving each table a unique name 
+    //apon creation, they are also used to insert data.
     public class DataClasses
     {
-        //Score classes acts as a basic model to hold score objects for each score table, 
-        //need a different class for each SQLite table because whatever the class name will be same name for the table
         public class NormalScore
         {
-            //Each high score has a username and score and id for the database
+            //Each high score has an id and score for the database
             [PrimaryKey, AutoIncrement]
             public int id { get; set; }
             public int userscore { get; set; }
@@ -21,7 +18,7 @@ namespace UWPMathGame.Data
 
         public class AdvancedScore
         {
-            //Each high score has a username and score and id for the database
+            //Each high score has an id and score for the database
             [PrimaryKey, AutoIncrement]
             public int id { get; set; }
             public int userscore { get; set; }
@@ -29,6 +26,7 @@ namespace UWPMathGame.Data
 
         public class GameSpeed
         {
+            //The speed has an id and speed value for the database
             [PrimaryKey, AutoIncrement]
             public int id { get; set; }
             public int speed { get; set; }

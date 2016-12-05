@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UWPMathGame.Models
+﻿namespace UWPMathGame.Models
 {
+    //This class has two instance variables for difficulty and score.
+    //It is used to pass game information from the PlayNormal and PlayAdvanced 
+    //page to the GameOver page once the player ends the game.
     class ScorePasser
     {
         public int difficulty { get; set; }

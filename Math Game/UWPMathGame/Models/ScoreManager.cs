@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using UWPMathGame.Data;
-using UWPMathGame.ViewModels;
-using System.Threading.Tasks;
+﻿using UWPMathGame.Data;
 
 namespace UWPMathGame.Models
 {
-    //Class is responsible for speaking to the data class (Score) and the data service which holds database communication
-    public class ScoreManager
+    //This class works at the model layer and has the sole responsibility of communicating with the data layer.
+    //Inside this class we have score and speed variables which are managed within this class.
+     public class ScoreManager
     {
         public int result, speed;
 
-        //Overloaded constructors for different tasks
-        public ScoreManager()//adding a score
+        public ScoreManager()
         { }
-
-        //Contructor gets list of scores from the data service depending on user choice made.
-        public ScoreManager(int choosenTable)//getting a score - offline
+        
+        //Get the Score from the requested table (difficulty) and return the result
+        public ScoreManager(int choosenTable)
         {
             DataService.choosenTable = choosenTable;
             result = DataService.GetScores();
@@ -30,12 +25,14 @@ namespace UWPMathGame.Models
             DataService.Insert(difficulty, score);
         }
 
+        //Get the Speed from the database and return the result
         public int Speed()
         {
             speed = DataService.GetSpeed();
             return speed;
         }
 
+        //Set the new speed
         public void SetSpeed(int speedValue)
         {
             DataService.SetSpeed(speedValue);

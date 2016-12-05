@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\UWPMathGame\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-05T19:02:20.518</Modified>
+      <Modified>2016-12-05T22:35:56.313</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\UWPMathGame\bin\x64\Debug\UWPMathGame.exe">
       <PackagePath>entrypoint\UWPMathGame.exe</PackagePath>
-      <Modified>2016-12-05T19:02:14.617</Modified>
+      <Modified>2016-12-05T22:35:55.450</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -512,11 +512,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\UWPMathGame\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-12-05T19:02:19.750</Modified>
+      <Modified>2016-12-05T21:06:37.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\chris\Documents\GitHub\Math-Game\Math Game\UWPMathGame\bin\x64\Debug\Core\UWPMathGame.exe">
       <PackagePath>UWPMathGame.exe</PackagePath>
-      <Modified>2016-12-05T19:02:20.499</Modified>
+      <Modified>2016-12-05T22:35:56.306</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

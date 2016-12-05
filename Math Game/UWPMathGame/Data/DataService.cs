@@ -1,21 +1,20 @@
 ﻿using SQLite.Net;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static UWPMathGame.Data.DataClasses;
 
 namespace UWPMathGame.Data
 {
+    // This class is at the data layer of the MVVM model.
+    //This class is responible for managing the score and speed data in
+    //the SQLite database and contains methods to both read and write from them.
     public class DataService
     {
         public static int choosenTable;          //This variable is set by the view model so we know which table to read from
-        private static SQLiteConnection con;           //Connection object for SQLite database
-        private static string path;                    //The path of the database in the file system
-        private static int id;
+        private static SQLiteConnection con;    //Connection object for SQLite database
+        private static string path;            //The path of the database in the file system
+        private static int id;                
         private static int result;
         private static int speed;
 
@@ -25,7 +24,6 @@ namespace UWPMathGame.Data
             //Connect to the database in windows local folder, specify the platform being used
             path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "madmath.sqlite");
             con = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
-
 
             //Perfrom a switch depending on user choice made to select a certain high score table
             switch (choosenTable)
@@ -41,7 +39,7 @@ namespace UWPMathGame.Data
                     con.Close();//close the connection after scores have been retrieved
                     break;
                 case 1:
-                    con.CreateTable<AdvancedScore>();//creates a table called 'EScore8'
+                    con.CreateTable<AdvancedScore>();//creates a table called 'AdvancedScore'
                     var advancedQuery = con.Table<AdvancedScore>();
                     foreach (var message in advancedQuery)
                     {
@@ -52,11 +50,10 @@ namespace UWPMathGame.Data
                     break;
             }//end switch
 
-            return result;         //return the querys results
+            return result;//return the querys results
 
         }//end getScores()
-
-        //Methods below will write to the database (should add async here when posting)
+        
         public static void Insert(int difficulty, int score)
         {
             //Connect to the database in windows local folder, specify the platform being used
@@ -70,7 +67,7 @@ namespace UWPMathGame.Data
                 con.Insert(new NormalScore() { userscore = score });
                 con.Close();
             }
-
+            //If difficulty setting of the game is Advanced
             else if (difficulty == 1)
             {
                 con.CreateTable<AdvancedScore>();
@@ -85,15 +82,15 @@ namespace UWPMathGame.Data
             path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "madmath.sqlite");
             con = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
 
-            con.CreateTable<GameSpeed>();//creates a table called 'NormalScore' 
+            con.CreateTable<GameSpeed>();//creates a table called 'GameSpeed' 
             var speedQuery = con.Table<GameSpeed>();
             foreach (var message in speedQuery)
             {
                 speed = message.speed;
             }
-            con.Close();//close the connection after scores have been retrieved
+            con.Close();//close the connection after speed has been retrieved
 
-            return speed;         //return the querys results
+            return speed;         //return results
 
         }//end getScores()
 
@@ -103,11 +100,10 @@ namespace UWPMathGame.Data
             path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "madmath.sqlite");
             con = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
 
+            //Create a table called 'GameSpeed' 
             con.CreateTable<GameSpeed>();
             con.Insert(new GameSpeed() { speed = speedValue });
             con.Close();
-
         }
-
     }
 }
