@@ -80,10 +80,10 @@ To install SQLite for a project on Visual Studio 2015 you must do the following:
 - Run the project.
 
 ## **References**
-1. [MVVM basics (https://www.codeproject.com/Articles/81484/A-Practical-Quick-start-Tutorial-on-MVVM-in-WPF)]
-2. [Xaml Grid Rows and Columns (http://www.wpf-tutorial.com/panels/grid-rows-and-columns/)]
-3. [SQLite Visual Studio Setup (http://blog.tigrangasparian.com/2012/02/09/getting-started-with-sqlite-in-c-part-one/)]
+1. [MVVM basics] (https://www.codeproject.com/Articles/81484/A-Practical-Quick-start-Tutorial-on-MVVM-in-WPF)
+2. [Xaml Grid Rows and Columns] (http://www.wpf-tutorial.com/panels/grid-rows-and-columns/)
+3. [SQLite Visual Studio Setup] (http://blog.tigrangasparian.com/2012/02/09/getting-started-with-sqlite-in-c-part-one/)
 4. MVVM structure - Lab exercise
-5. [SQLite queries (https://code.msdn.microsoft.com/windowsapps/Local-Data-Base-SQLite-for-5e6146aa)]
-6. [SQLite Classes (http://stackoverflow.com/questions/29454502/how-do-you-create-an-sqlite-database-with-c-sharp-in-visual-studio)]
-7. [Progress Bar Timer (https://www.youtube.com/watch?v=xUV4L8wtR7k)]
+5. [SQLite queries] (https://code.msdn.microsoft.com/windowsapps/Local-Data-Base-SQLite-for-5e6146aa)
+6. [SQLite Classes] (http://stackoverflow.com/questions/29454502/how-do-you-create-an-sqlite-database-with-c-sharp-in-visual-studio)
+7. [Progress Bar Timer] (https://www.youtube.com/watch?v=xUV4L8wtR7k)
