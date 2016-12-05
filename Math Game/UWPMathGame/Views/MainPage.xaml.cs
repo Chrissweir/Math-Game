@@ -43,9 +43,9 @@ namespace UWPMathGame.Views
             {
                 Application.Current.Exit();
             }
-
         }
 
+        //Click event handler for the Play button
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
                 Frame.Navigate(typeof(GameModeMenu));
